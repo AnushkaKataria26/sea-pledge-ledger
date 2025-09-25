@@ -22,6 +22,15 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+        },
+        carbon: {
+          green: "hsl(var(--carbon-green))",
+          "green-light": "hsl(var(--carbon-green-light))",
+          "green-dark": "hsl(var(--carbon-green-dark))",
+          gray: "hsl(var(--carbon-gray))",
+          "gray-light": "hsl(var(--carbon-gray-light))",
+          "gray-medium": "hsl(var(--carbon-gray-medium))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
