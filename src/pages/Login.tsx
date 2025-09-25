@@ -11,9 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 const signupSchema = z.object({
-  userType: z.enum(["corporate", "ngo"], {
-    required_error: "Please select a user type",
-  }),
+  userType: z.enum(["corporate", "ngo"]).default("corporate"),
   fullName: z.string().min(2, "Full name must be at least 2 characters"),
   phone: z.string().optional(),
   organization: z.string().min(2, "Organization name is required"),
